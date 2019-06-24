@@ -8,7 +8,7 @@ function invoke_gpa() {
 
 var callback = invoke_gpa;
 var filter = {
-    urls: ["https://jw.ustc.edu.cn/eams5/for-std/grade/sheet/info/*"]
+    urls: ["https://jw.ustc.edu.cn/eams5/for-std/grade/sheet/info/*", "https://jw.ustc.edu.cn/for-std/grade/sheet/info/*"]
 };
 
 chrome.webRequest.onCompleted.addListener(callback, filter);

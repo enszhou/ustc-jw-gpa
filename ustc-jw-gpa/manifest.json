@@ -1,7 +1,7 @@
 {
     "name": "GPA",
     "manifest_version": 2,
-    "version": "2.1",
+    "version": "2.2",
     "description": "calculate your gpa",
     "icons": {
         "16": "image/icon.png",
@@ -21,7 +21,7 @@
     "content_scripts": [
         {
             "matches": [
-                "https://jw.ustc.edu.cn/eams5/home"
+                "https://jw.ustc.edu.cn/*"
             ],
             "js": [
                 "js/jquery-3.4.1.min.js",
@@ -31,7 +31,7 @@
         }
     ],
     "permissions": [
-        "*://jw.ustc.edu.cn/eams5/home",
+        "*://jw.ustc.edu.cn/*",
         "webRequest",
         "webRequestBlocking",
         "tabs"
